@@ -1,6 +1,6 @@
 # Datadocgen - Content Creator's Guide
 
-##Introduction
+## Introduction
 
 This document provides the guidelines for preparing your jupyter notebook towards creating datadocs.
 
