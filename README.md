@@ -1,11 +1,12 @@
-# datadocgen
-Introduction
+# Datadocgen - Content Creator's Guide
+
+##Introduction
 
 This document provides the guidelines for preparing your jupyter notebook towards creating datadocs.
 
 
 
-Datadoc Framework
+## Datadoc Framework
 
 The datadoc framework consists of a main datadoc parser which comes as a jupyter notebook file. This has the python code to convert your content notebook to a Datadoc in a Plotly Dash application. The file is stored in the following github URL:
 
@@ -21,7 +22,7 @@ The input for the datadoc parser come as three (3) different files for ease of m
 
 The datadoc content creators must work on (1) the Input Content Notebook and (2) the Content Layout Template to match the needs of the specific datadoc. The Global Template and the Datadoc parser are part of the framework. The configurations to these global files are made by the Datadoc admin during deployment.
 
-Input Content Notebook
+## Input Content Notebook
 
 The main content for a datadoc is placed in a jupyter notebook - namely the Input Content Notebook. The language supported in python.
 
@@ -33,7 +34,7 @@ A sample input notebook is available in the below URL:
 
 This follows a simple format for text, followed by plot cells. The text cells are Markdown cells in the jupyter notebook. Plot cells are usually code cells with the &quot;plot&quot; tag. The text cells come with the &quot;desc&quot; tag. You could also include code cells with &quot;code&quot; tags where the code is not used for display in a datadoc but just runs in the background.
 
-Grouping of Cells
+### Grouping of Cells
 
 One important aspect of Input Notebook is the grouping of text and plot cells for sequential display in the datadoc. For that purpose, each text and plot cell must have a second tag &quot;groupX&quot; where X is a number. For example the first two cells could be a &quot;desc&quot; cell followed by a &quot;plot&quot; cell, both of them having &quot;group1&quot; as the second tag.
 
@@ -51,7 +52,7 @@ IMPORTANT: Note that the order of the tags is important. The first tag must alwa
 ![](images/image3.png?raw=true)
 
 
-Plot Requirements
+### Plot Requirements
 
 The plots are usually plotly plots. However, we could support Matplotlib in later versions.
 
@@ -60,7 +61,7 @@ The plotly plots in the input content notebook must have two methods with names 
 ![](images/image4.png?raw=true)
 
 
-Content Layout Template
+## Content Layout Template
 
 In addition to the Input Content, depending on the specific requirement, you may also need to have a version of the Layout Template. Layout template specifies the look and feel of the datadoc with specific details such as where must the text block appear or where the plot must be displayed or what must be the layout. Given below is a sample screenshot.
 
@@ -73,7 +74,7 @@ The sample layout file is available at the below URL:
 
 [https://github.com/colaberry/datadocgen/blob/master/dash\_template-regression.ipynb](https://github.com/colaberry/datadocgen/blob/master/dash_template-regression.ipynb)
 
-Repository
+## Repository
 
 The files for the datadoc generator, namely, the parser, sample input, sample layout and other deployment artifacts are available in the below repository.
 
